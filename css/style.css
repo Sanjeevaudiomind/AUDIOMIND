@@ -1,0 +1,447 @@
+/* Basic CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    overflow-x: hidden; /* Fix for horizontal scroll bug */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #005f73;
+}
+
+.btn {
+    background-color: #005f73;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0a9396;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #005f73;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0a9396;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    filter: brightness(0.7); /* Added for premium look and text readability */
+}
+
+.hero-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* About Section */
+#about {
+    padding: 4rem 0;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Services Section */
+#services {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-lists {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.service-column {
+    flex-basis: 45%;
+}
+
+.service-column h3 {
+    color: #005f73;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0a9396;
+    padding-bottom: 0.5rem;
+}
+
+.service-column ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.service-column li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+/* Doctors Section */
+#doctors {
+    padding: 4rem 0;
+}
+
+#doctors h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.doctor-cards {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding-bottom: 1rem; /* for scrollbar spacing */
+}
+
+.doctor-cards .card {
+    flex-basis: 250px;
+    flex-shrink: 0;
+}
+
+.doctor-cards .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Full Gallery Page */
+#full-gallery {
+    padding: 4rem 0;
+}
+
+.full-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.full-gallery-grid img {
+    height: 250px;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-lightbox:hover,
+.close-lightbox:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#lightbox-img {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 4rem 0;
+}
+
+#testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.testimonial-cards .card {
+    flex-basis: 30%;
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-cards .card h4 {
+    margin-top: 1rem;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-form, .contact-info {
+    flex-basis: 48%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .service-lists, .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .service-column {
+        flex-basis: 100%;
+    }
+}
