@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="/en">
+<html lang="en">
 <head>
-<meta charset="/UTF-8">
-<meta name="/viewport" content="/width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book an Appointment — AUDIOMIND Speech and Hearing LLP</title>
-<link rel="/stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/AUDIOMIND/css/style.css">
 </head>
 <body>
 
 <header class="site-nav">
   <div class="nav-inner">
-    <a href="/index.html" class="brand">
-      <svg class="mark" viewBox="/0 0 30 30" fill="/none" xmlns="/http://www.w3.org/2000/svg">
-        <circle cx="/15" cy="/15" r="/14" stroke="/#1F6F63" stroke-width="/1.5"/>
-        <path d="/M8 15c1.5-5 3-5 4.5 0s3 5 4.5 0 3-5 4.5 0" stroke="/#E8A33D" stroke-width="/1.6" fill="/none" stroke-linecap="/round"/>
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="14" stroke="#1F6F63" stroke-width="1.5"/>
+        <path d="M8 15c1.5-5 3-5 4.5 0s3 5 4.5 0 3-5 4.5 0" stroke="#E8A33D" stroke-width="1.6" fill="none" stroke-linecap="round"/>
       </svg>
       <span>AUDIOMIND<small>Speech &amp; Hearing LLP</small></span>
     </a>
     <nav class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/branches.html">Branches</a>
-      <a href="/appointment.html" class="active">Book Appointment</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="branches.html">Branches</a>
+      <a href="appointment.html" class="active">Book Appointment</a>
     </nav>
     <div class="nav-cta">
-      <a href="/tel:9471493486" class="btn btn-outline">Call Clinic</a>
+      <a href="tel:9471493486" class="btn btn-outline">Call Clinic</a>
     </div>
-    <button class="hamburger" aria-label="/Menu"><span></span><span></span><span></span></button>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero" style="/padding:70px 0 56px;">
-  <div class="container" style="/display:block;">
+<section class="hero" style="padding:70px 0 56px;">
+  <div class="container" style="display:block;">
     <div class="eyebrow">Book an Appointment</div>
-    <h1 style="/max-width:20ch;">Choose a branch, date and time.</h1>
+    <h1 style="max-width:20ch;">Choose a branch, date and time.</h1>
     <p class="lede">Pick what's convenient — we'll call you to confirm before your visit.</p>
   </div>
 </section>
@@ -45,26 +45,26 @@
       <div>
         <div class="row-2">
           <div class="field">
-            <label for="/patientName">Full Name</label>
-            <input type="/text" id="patientName" placeholder="/Your name" required>
+            <label for="patientName">Full Name</label>
+            <input type="text" id="patientName" placeholder="Your name" required>
           </div>
           <div class="field">
-            <label for="/patientPhone">Phone Number</label>
-            <input type="/tel" id="patientPhone" placeholder="/10-digit mobile number" required>
+            <label for="patientPhone">Phone Number</label>
+            <input type="tel" id="patientPhone" placeholder="10-digit mobile number" required>
           </div>
         </div>
 
         <div class="row-2">
           <div class="field">
-            <label for="/branchSelect">Branch</label>
+            <label for="branchSelect">Branch</label>
             <select id="branchSelect">
-              <option value="/Rewari">Rewari, Haryana</option>
-              <option value="/Bhiwadi">Bhiwadi, Rajasthan</option>
-              <option value="/Bareilly">Bareilly, Uttar Pradesh</option>
+              <option value="Rewari">Rewari, Haryana</option>
+              <option value="Bhiwadi">Bhiwadi, Rajasthan</option>
+              <option value="Bareilly">Bareilly, Uttar Pradesh</option>
             </select>
           </div>
           <div class="field">
-            <label for="/serviceSelect">Service Needed</label>
+            <label for="serviceSelect">Service Needed</label>
             <select id="serviceSelect">
               <option>ENT Consultation</option>
               <option>Hearing Test (Audiometry)</option>
@@ -78,40 +78,40 @@
         </div>
 
         <div class="field">
-          <label for="/patientNote">Note (optional)</label>
-          <textarea id="patientNote" rows="/3" placeholder="/Anything you'd like us to know before your visit"></textarea>
+          <label for="patientNote">Note (optional)</label>
+          <textarea id="patientNote" rows="3" placeholder="Anything you'd like us to know before your visit"></textarea>
         </div>
 
         <div class="calendar">
           <div class="cal-head">
-            <button type="/button" id="prevMonth" aria-label="/Previous month">‹</button>
+            <button type="button" id="prevMonth" aria-label="Previous month">‹</button>
             <span class="label" id="calLabel"></span>
-            <button type="/button" id="nextMonth" aria-label="/Next month">›</button>
+            <button type="button" id="nextMonth" aria-label="Next month">›</button>
           </div>
           <div class="cal-grid" id="calGrid"></div>
         </div>
 
-        <div class="slots" id="slotsBox" style="/display:none;">
-          <label style="/font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);">Available Time Slots</label>
+        <div class="slots" id="slotsBox" style="display:none;">
+          <label style="font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);">Available Time Slots</label>
           <div class="slot-grid" id="slotGrid"></div>
         </div>
 
-        <button type="/submit" class="btn btn-primary" style="/margin-top:24px;width:100%;justify-content:center;">Confirm Appointment Request</button>
+        <button type="submit" class="btn btn-primary" style="margin-top:24px;width:100%;justify-content:center;">Confirm Appointment Request</button>
         <p class="form-note">We'll call to confirm your slot. Slots already picked on this device are shown blocked below — final confirmation is always by phone.</p>
 
         <div class="confirm-box" id="confirmBox">
           <h3>Request received</h3>
-          <p id="confirmDetails" style="/color:var(--ink-soft);margin:0;"></p>
+          <p id="confirmDetails" style="color:var(--ink-soft);margin:0;"></p>
         </div>
       </div>
 
       <aside>
-        <div class="card" style="/margin-bottom:20px;">
+        <div class="card" style="margin-bottom:20px;">
           <div class="idx">Clinic Hours</div>
           <h3>Monday – Saturday</h3>
           <p>10:00 AM – 7:00 PM<br>Closed on Sundays</p>
         </div>
-        <div class="card" style="/margin-bottom:20px;">
+        <div class="card" style="margin-bottom:20px;">
           <div class="idx">Prefer to call?</div>
           <h3>9471493486</h3>
           <p>Our front desk can also book your slot directly over the phone.</p>
@@ -131,23 +131,23 @@
     <div class="footer-grid">
       <div>
         <h4>AUDIOMIND</h4>
-        <p style="/color:#B9C2C4;font-size:.88rem;max-width:32ch;">Speech and Hearing LLP — ENT, audiology and speech therapy across Rewari, Bhiwadi and Bareilly.</p>
+        <p style="color:#B9C2C4;font-size:.88rem;max-width:32ch;">Speech and Hearing LLP — ENT, audiology and speech therapy across Rewari, Bhiwadi and Bareilly.</p>
       </div>
       <div>
         <h4>Site</h4>
-        <a href="/about.html">About</a>
-        <a href="/services.html">Services</a>
-        <a href="/branches.html">Branches</a>
-        <a href="/appointment.html">Book Appointment</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="branches.html">Branches</a>
+        <a href="appointment.html">Book Appointment</a>
       </div>
       <div>
         <h4>Contact</h4>
-        <a href="/tel:9471493486">9471493486</a>
-        <a href="/mailto:audiomindspeechandhearing@gmail.com">audiomindspeechandhearing@gmail.com</a>
+        <a href="tel:9471493486">9471493486</a>
+        <a href="mailto:audiomindspeechandhearing@gmail.com">audiomindspeechandhearing@gmail.com</a>
       </div>
       <div>
         <h4>Hours</h4>
-        <p style="/color:#B9C2C4;font-size:.88rem;">Monday – Saturday<br>10:00 AM – 7:00 PM<br>Closed Sunday</p>
+        <p style="color:#B9C2C4;font-size:.88rem;">Monday – Saturday<br>10:00 AM – 7:00 PM<br>Closed Sunday</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -157,7 +157,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
-<script src="/js/booking.js"></script>
+<script src="/AUDIOMIND/JS/main.js"></script>
+<script src="/AUDIOMIND/JS/booking.js"></script>
 </body>
 </html>
